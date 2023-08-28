@@ -1,5 +1,7 @@
 //
 import Cabecalho from "./components/Cabecalho"
+import Carros from "./components/Carros"
+import Parceiros from "./components/Parceiros"
 
 export default function App() {
 
@@ -15,15 +17,11 @@ export default function App() {
         <Cabecalho/>
 
         {/* Vamos criar uma seção com uma div, com 3 <p></p> e estes <p></p> vão ter 3 linhas de lorem, abaixo
-        dos <p></p> uma img.  */}
+        dos <p></p> uma img.  apaguei*/}
 
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eum blanditiis assumenda, praesentium numquam, harum repudiandae doloribus sed quaerat neque officiis. Accusamus odio sed soluta vel rem, aliquam enim facilis.</p>
+        <Carros/>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur labore ad quis cumque ullam amet vitae exercitationem, officiis dolorem a illo ratione explicabo eligendi nemo hic eveniet veritatis magni debitis.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, facilis? Suscipit excepturi molestias vel obcaecati repellat nemo commodi nihil nisi optio maiores, quia esse expedita ullam, voluptatum unde dolore beatae!</p>
-        </div>
+        <Parceiros/>
 
         {/* Vamos criar uma rodape com uma div, uma lista com 3 itens com links para redes sociais e abaixo um <p></p> 
         com o texto e código do simbolo de direitos reservados*/}
