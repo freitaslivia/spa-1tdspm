@@ -8,18 +8,11 @@ export default function App() {
       <div className="container">
         {/* comentario */}
 
-        <Cabecalho></Cabecalho>
+        
         {/* Vamos criar um cabeçalho com um header, um h1 com titulo e uma lista ul com 3 item
         com link.  */}
 
-        <header>
-          <h1>Meu site</h1>
-          <ul>
-            <li><a href="#">Item - 1</a></li>
-            <li><a href="#">Item - 2</a></li>
-            <li><a href="#">Item - 3</a></li>
-          </ul>
-        </header>
+        <Cabecalho/>
 
         {/* Vamos criar uma seção com uma div, com 3 <p></p> e estes <p></p> vão ter 3 linhas de lorem, abaixo
         dos <p></p> uma img.  */}
