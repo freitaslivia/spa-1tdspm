@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Conteudo() {
   return (
     <>
@@ -27,5 +25,5 @@ export default function Conteudo() {
         </div>
       </section>
     </>
-  )
+  );
 }
