@@ -12,7 +12,7 @@ export default function Produtos() {
     <div>
       <h1>LISTA DE PRODUTOS</h1>
 
-      <table className={style}>
+      <table className={style.tblEstilo}>
         <thead>
         <tr>
           <th>ID</th>
@@ -25,7 +25,7 @@ export default function Produtos() {
         <tbody>
         {
           ListaProdutos.map((item,indice)=>(
-            <tr key={indice}>
+            <tr key={indice} className={style.tblLine}>
                 <td>{item.id}</td>
                 <td>{item.nome}</td>
                 <td>{item.desc}</td>
