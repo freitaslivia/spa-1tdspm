@@ -39,7 +39,7 @@ export default function CadastrarProduto() {
       <div>
         <form onSubmit={onSubmit}>
           <fieldset>
-            <legend>PRODUTO SELECIONADO</legend>
+            <legend>PRODUTO</legend>
             <div>
               <label htmlFor="idNome">Nome do Produto:</label>
               <input
