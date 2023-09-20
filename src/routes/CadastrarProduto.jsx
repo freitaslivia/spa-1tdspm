@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { ListaProdutos } from "../components/ListaProdutos";
+import { useNavigate} from "react-router-dom";
 
 export default function CadastrarProduto() {
   document.title = "Cadastrar Produtos";
+
+  //Utilizando o useNavigate para fazer um redirect
+  const navigate = useNavigate()
 
   const [novoProduto, setNovoProduto] = useState({
     id: ListaProdutos.length + 1, // ID sequencial
@@ -30,6 +34,9 @@ export default function CadastrarProduto() {
       desc: "",
       valor: "",
     });
+
+    navigate("/produtos");
+    
   }
 
   return (
