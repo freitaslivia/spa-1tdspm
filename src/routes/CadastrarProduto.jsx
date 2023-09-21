@@ -53,7 +53,7 @@ export default function CadastrarProduto() {
             </div>
             <div>
               <label htmlFor="idDesc">Descrição do Produto:</label>
-              <input type="text"name="desc" id="idDesc" value={novoProduto.desc} onChange={onChange} />
+              <input type="text" name="desc" id="idDesc" value={novoProduto.desc} onChange={onChange} />
             </div>
             <div>
               <label htmlFor="idValor">Valor do Produto:</label>

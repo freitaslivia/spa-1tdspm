@@ -39,8 +39,9 @@ export default function Produtos() {
       <div>
         <button onClick={()=> setCounter2(counter2 + 1)}>COUNTER2 - {counter2}</button>
       </div>
-      
+      <div>
         <button> <Link to={`/cadastrar/produtos`}>Cadastrar</Link></button>
+      </div>
 
       <table className={style.tblEstilo}>
         <thead>
