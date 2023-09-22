@@ -4,10 +4,10 @@ import App from './App.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home.jsx';
-import EditarProdutos from './routes/EditarProdutos.jsx';
+import EditarProdutos from './routes/EditarProduto.jsx';
 import Erro404 from './routes/Erro404.jsx';
 import Produtos from './routes/Produtos.jsx';
-import ExcluirProduto from './routes/ExcluirProduto.jsx';
+import ExcluirProduto from './routes/ExcluirProdutos.jsx';
 import InserirProduto from './routes/InserirProduto.jsx';
 
 const router = createBrowserRouter([
@@ -28,4 +28,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
        <RouterProvider router={router}/>
   ,
 )
-
