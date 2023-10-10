@@ -32,12 +32,12 @@ export default function Produtos() {
   }, []);
 
   const handleOpenEditar = (produto) => {
-    setProdutoSelecionado(produto); // Defina o produto selecionado
+    setProdutoSelecionado(produto); 
     setOpenEditar(true);
   };
 
   const handleOpenExcluir = (produto) => {
-    setProdutoSelecionado(produto); // Defina o produto selecionado
+    setProdutoSelecionado(produto); 
     setOpenExcluir(true);
   };
 
@@ -51,7 +51,7 @@ export default function Produtos() {
         <ExcluirP
           openExcluir={openExcluir}
           setOpenExcluir={setOpenExcluir}
-          produto={produtoSelecionado} // Passe o produto selecionado
+          produto={produtoSelecionado}
         />
       ) : null}
 
@@ -59,7 +59,7 @@ export default function Produtos() {
         <EditarP
           openEditar={openEditar}
           setOpenEditar={setOpenEditar}
-          produto={produtoSelecionado} // Passe o produto selecionado
+          produto={produtoSelecionado} 
         />
       ) : null}
 
