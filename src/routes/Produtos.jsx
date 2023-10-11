@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { GrFormEdit as Editar } from "react-icons/gr";
 import { RiDeleteBin2Fill as Excluir } from "react-icons/ri";
 import style from "./Produtos.module.css";
@@ -15,7 +14,7 @@ export default function Produtos() {
   const [open, setOpen] = useState(false);
   const [openExcluir, setOpenExcluir] = useState(false);
   const [openEditar, setOpenEditar] = useState(false);
-  const [produtoSelecionado, setProdutoSelecionado] = useState(null); // Estado para armazenar o produto selecionado
+  const [produtoSelecionado, setProdutoSelecionado] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:5000/produtos", {
@@ -45,15 +44,13 @@ export default function Produtos() {
     <div>
       <h1>LISTA DE PRODUTOS</h1>
 
-      {open ? <ModalInserir open={open} setOpen={setOpen} /> : null}
+      {open ? <ModalInserir open={open} setOpen={setOpen} /> : ""}
 
-      {openExcluir ? (
-        <ExcluirP
-          openExcluir={openExcluir}
+      {openExcluir ? (<ExcluirP openExcluir={openExcluir}
           setOpenExcluir={setOpenExcluir}
           produto={produtoSelecionado}
         />
-      ) : null}
+      ) : ""}
 
       {openEditar ? (
         <EditarP
@@ -61,7 +58,7 @@ export default function Produtos() {
           setOpenEditar={setOpenEditar}
           produto={produtoSelecionado} 
         />
-      ) : null}
+      ) : ""}
 
       <button onClick={() => setOpen(true)}>OPEN-MODAL</button>
 
@@ -85,8 +82,7 @@ export default function Produtos() {
               <td>
                 <button onClick={() => handleOpenEditar(item)}>
                   <Editar />
-                </button>{" "}
-                |{" "}
+                </button>
                 <button onClick={() => handleOpenExcluir(item)}>
                   <Excluir />
                 </button>

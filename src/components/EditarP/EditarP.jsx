@@ -8,7 +8,6 @@ export default function EditarProduto(props) {
     valor: "",
   });
 
-  // UseEffect para carregar os dados do produto quando o componente é montado
   useEffect(() => {
     if (props.produto) {
       setProduto(props.produto);
@@ -16,7 +15,6 @@ export default function EditarProduto(props) {
   }, [props.produto]);
 
   const handleChange = (e) => {
-    // Destructuring dos dados que chegam do form.
     const { name, value } = e.target;
     setProduto({ ...produto, [name]: value });
   };
@@ -34,7 +32,7 @@ export default function EditarProduto(props) {
       .then((response) => response.json())
       .then((response) => {
         console.log(response);
-        // Feche o modal de edição
+       
         props.setOpenEditar(false);
 
         location.reload();
