@@ -46,19 +46,20 @@ export default function Produtos() {
 
       {open ? <ModalInserir open={open} setOpen={setOpen} /> : ""}
 
-      {openExcluir ? (<ExcluirP openExcluir={openExcluir}
+      {openExcluir ? 
+        <ExcluirP openExcluir={openExcluir}
           setOpenExcluir={setOpenExcluir}
           produto={produtoSelecionado}
         />
-      ) : ""}
+       : ""}
 
-      {openEditar ? (
+      {openEditar ? 
         <EditarP
           openEditar={openEditar}
           setOpenEditar={setOpenEditar}
           produto={produtoSelecionado} 
         />
-      ) : ""}
+       : ""}
 
       <button onClick={() => setOpen(true)}>OPEN-MODAL</button>
 

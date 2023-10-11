@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "id": 14,
-      "nome": "HDd",
-      "desc": "HD 1TB",
-      "valor": 400
-    },
-    {
       "id": 15,
       "nome": "Water Cooler",
       "desc": "Water Cooler 240mm",
@@ -14,7 +8,7 @@
     },
     {
       "id": 16,
-      "nome": "Cabo HDMI",
+      "nome": "Cabo HDMIi",
       "desc": "Cabo HDMI 2.0",
       "valor": 50
     },
